@@ -3,14 +3,21 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Shawn Ding | Data Scientist</title>
+
+<title>Shawn Ding | Data Science Portfolio</title>
 
 <style>
-body{
-    font-family:Arial,Helvetica,sans-serif;
+*{
     margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
     line-height:1.6;
     color:#333;
+    background:#fafafa;
 }
 
 header{
@@ -20,22 +27,68 @@ header{
     padding:80px 20px;
 }
 
-section{
+header h1{
+    font-size:3rem;
+    margin-bottom:10px;
+}
+
+header h3{
+    font-weight:normal;
+    margin-bottom:20px;
+}
+
+header p{
+    margin-bottom:10px;
+}
+
+.container{
     max-width:1100px;
     margin:auto;
-    padding:50px 20px;
+    padding:40px 20px;
+}
+
+section{
+    margin-bottom:50px;
 }
 
 h2{
-    border-bottom:2px solid #e5e7eb;
+    color:#0f172a;
+    margin-bottom:20px;
     padding-bottom:10px;
+    border-bottom:2px solid #e5e7eb;
 }
 
 .card{
-    border:1px solid #ddd;
+    background:white;
     border-radius:10px;
-    padding:20px;
-    margin:20px 0;
+    padding:25px;
+    margin-bottom:20px;
+    box-shadow:0 2px 8px rgba(0,0,0,0.08);
+}
+
+.card h3{
+    margin-bottom:10px;
+    color:#111827;
+}
+
+.date{
+    color:#6b7280;
+    font-size:0.95rem;
+    margin-bottom:15px;
+}
+
+.btn{
+    display:inline-block;
+    background:#2563eb;
+    color:white;
+    padding:12px 20px;
+    border-radius:6px;
+    text-decoration:none;
+    margin:10px;
+}
+
+.btn:hover{
+    background:#1d4ed8;
 }
 
 .skills{
@@ -48,54 +101,99 @@ h2{
     background:#e2e8f0;
     padding:8px 14px;
     border-radius:20px;
-}
-
-.btn{
-    display:inline-block;
-    padding:12px 20px;
-    background:#2563eb;
-    color:white;
-    text-decoration:none;
-    border-radius:6px;
+    font-size:14px;
 }
 
 footer{
+    background:#f3f4f6;
     text-align:center;
     padding:30px;
-    background:#f5f5f5;
+    margin-top:50px;
+}
+
+ul{
+    padding-left:20px;
+}
+
+li{
+    margin-bottom:8px;
+}
+
+.project-link{
+    display:inline-block;
+    margin-top:10px;
+    color:#2563eb;
+    text-decoration:none;
+    font-weight:bold;
+}
+
+.project-link:hover{
+    text-decoration:underline;
+}
+
+@media(max-width:768px){
+    header h1{
+        font-size:2rem;
+    }
 }
 </style>
+
 </head>
 
 <body>
 
 <header>
-    <h1>Shawn Ding</h1>
-    <h3>Data Science Graduate Student | Analytics | Machine Learning | Big Data</h3>
 
-    <p>
-        Ashburn, Virginia • Willing to Relocate
-    </p>
+<h1>Shawn Ding</h1>
 
-    <p>
-        exf7sx@virginia.edu |
-        +1 (240) 810-4457
-    </p>
-
-    <p>
-        <a style="color:white" href="https://github.com/shawn01-kubo">GitHub</a>
-    </p>
-</header>
-
-<section>
-<h2>About Me</h2>
+<h3>Data Science Graduate Student | Machine Learning | Analytics | Big Data</h3>
 
 <p>
-I am a Master of Science in Data Science student at the University of Virginia with experience in machine learning,
-analytics, big data systems, cloud computing, and financial analysis.
-My work spans database normalization, predictive modeling, NLP, computer vision, investment analysis,
-and large-scale data engineering.
+Ashburn, Virginia • Willing to Relocate
 </p>
+
+<p>
+📧 exf7sx@virginia.edu |
+📱 +1 (240) 810-4457
+</p>
+
+<div>
+<a class="btn"
+href="resume.pdf"
+target="_blank">
+Download Resume
+</a>
+
+<a class="btn"
+href="https://github.com/shawn01-kubo"
+target="_blank">
+GitHub
+</a>
+
+<a class="btn"
+href="https://www.linkedin.com/in/shawn-ding-508673206/"
+target="_blank">
+LinkedIn
+</a>
+</div>
+
+</header>
+
+<div class="container">
+
+<section>
+
+<h2>About Me</h2>
+
+<div class="card">
+
+<p>
+I am a Master of Science in Data Science student at the University of Virginia with experience in machine learning, predictive analytics, big data systems, cloud computing, natural language processing, computer vision, and quantitative finance.
+
+My work spans large-scale data engineering, database normalization, statistical modeling, investment analysis, and AI-powered applications. I enjoy transforming complex datasets into actionable insights that support strategic decision-making.
+</p>
+
+</div>
 
 </section>
 
@@ -104,21 +202,44 @@ and large-scale data engineering.
 <h2>Education</h2>
 
 <div class="card">
+
 <h3>University of Virginia</h3>
-<p>
-Master of Science in Data Science<br>
-Aug 2025 – Aug 2026<br>
-GPA: 3.70/4.00
+
+<p class="date">
+Master of Science in Data Science |
+Aug 2025 – Aug 2026
 </p>
+
+<ul>
+<li>GPA: 3.70 / 4.00</li>
+<li>Big Data Systems</li>
+<li>Deep Learning</li>
+<li>Decoding Large Language Models</li>
+<li>Data Mining & Statistical Learning</li>
+<li>Data Pipeline Architecture</li>
+</ul>
+
 </div>
 
 <div class="card">
+
 <h3>Virginia Tech</h3>
-<p>
-B.S. Statistics, Minor in Finance<br>
-Aug 2020 – Dec 2024<br>
-GPA: 3.30/4.00
+
+<p class="date">
+Bachelor of Science in Statistics |
+Minor in Finance |
+Aug 2020 – Dec 2024
 </p>
+
+<ul>
+<li>GPA: 3.30 / 4.00</li>
+<li>Applied Bayesian Statistics</li>
+<li>Statistical Time Series Analysis</li>
+<li>Methods of Regression Analysis</li>
+<li>Financial Analytics</li>
+<li>Corporate Finance</li>
+</ul>
+
 </div>
 
 </section>
@@ -128,38 +249,58 @@ GPA: 3.30/4.00
 <h2>Professional Experience</h2>
 
 <div class="card">
+
 <h3>Database Normalization Analyst</h3>
-<p><b>UVA Institutional Research & Analytics</b></p>
+
+<p class="date">
+UVA Institutional Research & Analytics |
+Mar 2026 – Present
+</p>
 
 <ul>
-<li>Standardized 500K+ student address records.</li>
-<li>Reduced address inconsistencies by 30%.</li>
-<li>Developed scalable international validation systems.</li>
-<li>Reduced manual cleaning effort by 40%.</li>
+<li>Standardized 500K+ student address records within enterprise reporting systems.</li>
+<li>Reduced address inconsistencies by 30% using fuzzy matching and validation pipelines.</li>
+<li>Designed scalable international address validation architecture.</li>
+<li>Reduced manual data cleaning effort by 40%.</li>
+<li>Evaluated real-time API solutions projected to reduce reporting errors by 15%.</li>
 </ul>
+
 </div>
 
 <div class="card">
+
 <h3>Data Analysis Intern</h3>
-<p><b>Amway China</b></p>
+
+<p class="date">
+Amway China |
+Feb 2025 – Apr 2025
+</p>
 
 <ul>
-<li>Improved campaign ROI by 15%.</li>
-<li>Improved customer retention by 10%.</li>
-<li>Automated reporting workflows.</li>
-<li>Built executive-level analytical reports.</li>
+<li>Improved campaign ROI by 15% using regression and time-series analysis.</li>
+<li>Increased customer retention by 10% through behavioral analytics.</li>
+<li>Automated Excel and R workflows reducing manual effort by 30%.</li>
+<li>Delivered executive-level dashboards supporting business decisions.</li>
 </ul>
+
 </div>
 
 <div class="card">
-<h3>Data Pricing Analysis Intern</h3>
-<p><b>ZJU-Hangzhou Global Scientific & Technological Innovation Center</b></p>
+
+<h3>Data Pricing Analysis Research Intern</h3>
+
+<p class="date">
+ZJU-Hangzhou Global Scientific & Technological Innovation Center |
+Jun 2024 – Aug 2024
+</p>
 
 <ul>
-<li>Improved pricing accuracy by 20%.</li>
-<li>Analyzed 50K+ market records.</li>
-<li>Reduced pricing errors by 12%.</li>
+<li>Built dynamic pricing models improving market efficiency by 15%.</li>
+<li>Processed and analyzed 50,000+ data records.</li>
+<li>Improved predictive accuracy by 20%.</li>
+<li>Reduced pricing errors by 12% using machine learning models.</li>
 </ul>
+
 </div>
 
 </section>
@@ -169,46 +310,76 @@ GPA: 3.30/4.00
 <h2>Featured Projects</h2>
 
 <div class="card">
+
 <h3>Traffic Sign Recognition for Autonomous Driving</h3>
 
 <p>
-CNN-based traffic sign classification using TensorFlow,
-Keras and OpenCV.
-Achieved 94.41% test accuracy across 43 traffic sign categories.
+Built a convolutional neural network using TensorFlow, Keras, and OpenCV to classify 43 traffic sign categories from the GTSRB dataset.
+Achieved 94.41% test accuracy and developed a real-time webcam inference pipeline.
 </p>
 
-<a class="btn"
-href="https://github.com/shawn01-kubo/DS-6050-Final-Project">
-View Project
+<a class="project-link"
+href="https://github.com/shawn01-kubo/DS-6050-Final-Project"
+target="_blank">
+View Project →
 </a>
+
 </div>
 
 <div class="card">
+
 <h3>Digital Analytical Edition of the I Ching</h3>
 
 <p>
-Large-scale NLP project analyzing a 122,000-word corpus using
-LDA, Word2Vec, PCA, clustering, and sentiment analysis.
+Developed a full NLP pipeline using Word2Vec, LDA, PCA, clustering, and sentiment analysis on a 122,000-word corpus of classical Chinese texts.
 </p>
 
-<a class="btn"
-href="https://github.com/Poptartmeow/DS5001-I-Ching-the-Book-of-Change">
-View Project
+<a class="project-link"
+href="https://github.com/Poptartmeow/DS5001-I-Ching-the-Book-of-Change"
+target="_blank">
+View Project →
 </a>
+
 </div>
 
 <div class="card">
-<h3>SNAP Policy Generosity Analysis</h3>
+
+<h3>Measuring SNAP Policy Generosity Across U.S. States</h3>
 
 <p>
-Machine learning analysis across all 50 U.S. states using
-Lasso, Ridge regression, demographic data, and policy metrics.
+Applied Lasso and Ridge regression to analyze policy generosity across all 50 states using demographic, economic, and political variables.
 </p>
 
-<a class="btn"
-href="https://github.com/aeonlevy/ds6021_Project_Materials">
-View Project
+<a class="project-link"
+href="https://github.com/aeonlevy/ds6021_Project_Materials"
+target="_blank">
+View Project →
 </a>
+
+</div>
+
+</section>
+
+<section>
+
+<h2>Interactive Analytics & Visualizations</h2>
+
+<div class="card">
+
+<h3>Coming Soon</h3>
+
+<p>
+Future interactive dashboards and visual analytics projects will be published here using Tableau, Plotly, Python, and Power BI.
+</p>
+
+<ul>
+<li>Student Analytics Dashboard</li>
+<li>Financial Market Dashboard</li>
+<li>SNAP Policy Explorer</li>
+<li>Machine Learning Performance Dashboard</li>
+<li>Traffic Sign Recognition Demo</li>
+</ul>
+
 </div>
 
 </section>
@@ -225,21 +396,38 @@ View Project
 <span class="skill">Java</span>
 <span class="skill">Apache Spark</span>
 <span class="skill">Hadoop</span>
-<span class="skill">AWS</span>
+<span class="skill">AWS EC2</span>
+<span class="skill">AWS Lambda</span>
+<span class="skill">Google Cloud</span>
+<span class="skill">Ray</span>
+<span class="skill">DuckDB</span>
 <span class="skill">Machine Learning</span>
 <span class="skill">Deep Learning</span>
+<span class="skill">Data Mining</span>
 <span class="skill">Tableau</span>
 <span class="skill">Power BI</span>
 <span class="skill">Git</span>
 <span class="skill">Linux</span>
-<span class="skill">Financial Analytics</span>
+<span class="skill">Predictive Modeling</span>
+<span class="skill">Time Series Analysis</span>
+<span class="skill">NLP</span>
+<span class="skill">Computer Vision</span>
+<span class="skill">Fixed Income Analysis</span>
+<span class="skill">CAPM</span>
+<span class="skill">Portfolio Optimization</span>
 
 </div>
 
 </section>
 
+</div>
+
 <footer>
-<p>© 2026 Shawn Ding</p>
+
+<p>
+© 2026 Shawn Ding | University of Virginia MS in Data Science
+</p>
+
 </footer>
 
 </body>
